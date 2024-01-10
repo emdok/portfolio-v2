@@ -5,8 +5,8 @@
 }
 
 :root {
-  --color-text: #3C3C3C;
-  --color-background: #FFFBEF;
+  --color-text: #{$color-dark-gray};
+  --color-background: #{$color-off-white};
 }
 
 body {
@@ -21,4 +21,10 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+	display: block;
+	height: auto;
+	max-width: 100%;
 }
