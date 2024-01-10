@@ -1,0 +1,26 @@
+@font-face {
+	src: url('../assets/fonts/Lexend-VariableFont_wght.ttf');
+	font-family: 'Lexend';
+	font-display: block;
+	font-weight: normal;
+	font-style: normal;
+}
+
+:root {
+  --color-text: #3C3C3C;
+  --color-background: #FFFBEF;
+}
+
+body {
+  min-height: 100vh;
+  color: var(--color-text);
+  background: var(--color-background);
+  line-height: 1.6;
+  font-family:
+    'Lexend',
+    sans-serif;
+  font-size: 15px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
