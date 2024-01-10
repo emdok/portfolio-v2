@@ -1,12 +1,13 @@
 $nav-font-size-lg: 24px;
 $nav-font-size-sm: 16px;
+$page-title-size-lg: 96px;
 
 @font-face {
-	src: url('../assets/fonts/Lexend-VariableFont_wght.ttf');
-	font-family: 'Lexend';
-	font-display: block;
-	font-weight: 100 900;
-	font-style: normal;
+  src: url('../assets/fonts/Lexend-VariableFont_wght.ttf');
+  font-family: 'Lexend';
+  font-display: block;
+  font-weight: 100 900;
+  font-style: normal;
 }
 
 h1,
@@ -22,9 +23,22 @@ span,
 blockquote,
 caption,
 cite {
-	margin: 0;
+  margin: 0;
 }
 
 h1 {
   font-weight: 700;
+}
+
+.page-title {
+	display: flex;
+	flex-direction: column;
+  font-size: $page-title-size-lg;
+  font-weight: 700;
+  text-shadow:
+    -2px -2px 0 #fff,
+    2px -2px 0 #fff,
+    -2px 2px 0 #fff,
+    2px 2px 0 #fff,
+    -6px 10px 0px #d0ffd5;
 }

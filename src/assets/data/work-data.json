@@ -1,0 +1,40 @@
+{
+  "items": [
+    {
+      "id": "01",
+      "title": "Item 1",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "images": ["https://picsum.photos/275/300", "https://picsum.photos/275/300", "https://picsum.photos/275/300"]
+    },
+    {
+      "id": "02",
+      "title": "Item 2",
+      "description": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "images": ["https://picsum.photos/275/300", "https://picsum.photos/275/300"]
+    },
+    {
+      "id": "03",
+      "title": "Item 3",
+      "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+      "images": ["https://picsum.photos/275/300", "https://picsum.photos/275/300", "https://picsum.photos/275/300", "https://picsum.photos/275/300"]
+    },
+    {
+      "id": "04",
+      "title": "Item 4",
+      "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.",
+      "images": ["https://picsum.photos/275/300"]
+    },
+    {
+      "id": "05",
+      "title": "Item 5",
+      "description": "Excepteur sint occaecat cupidatat non proident, sunt in culpa.",
+      "images": ["https://picsum.photos/275/300", "https://picsum.photos/275/300"]
+    },
+    {
+      "id": "06",
+      "title": "Item 6",
+      "description": "Fugiat nulla pariatur, excepteur sint occaecat cupidatat non proident.",
+      "images": ["https://picsum.photos/275/300", "https://picsum.photos/275/300", "https://picsum.photos/275/300"]
+    }
+  ]
+}
