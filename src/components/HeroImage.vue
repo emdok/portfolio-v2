@@ -9,7 +9,7 @@
 
 <style lang="scss">
 .hero-image {
-  max-width: 500px;
+  max-width: 30vw;
 }
 
 </style>
