@@ -8,6 +8,8 @@
 </template>
 
 <style lang="scss">
-
+.hero-image {
+  max-width: 500px;
+}
 
 </style>
