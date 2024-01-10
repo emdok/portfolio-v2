@@ -1,6 +1,7 @@
 $nav-font-size-lg: 24px;
 $nav-font-size-sm: 16px;
 $page-title-size-lg: 96px;
+$about-font-size-lg: 32px;
 
 @font-face {
   src: url('../assets/fonts/Lexend-VariableFont_wght.ttf');
@@ -41,4 +42,12 @@ h1 {
     -2px 2px 0 #fff,
     2px 2px 0 #fff,
     -6px 10px 0px #d0ffd5;
+}
+
+.p2 {
+	font-size: $about-font-size-lg;
+	font-weight: 300;
+	&--bold {
+		font-weight: 500;
+	}
 }

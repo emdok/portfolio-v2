@@ -2,6 +2,7 @@
 import { RouterLink, RouterView } from 'vue-router'
 import Hero from './components/Hero.vue'
 import HeroImage from './components/HeroImage.vue'
+import AboutView from './views/AboutView.vue'
 import WorkView from './views/WorkView.vue'
 </script>
 
@@ -21,14 +22,14 @@ import WorkView from './views/WorkView.vue'
   </header>
   <RouterView />
   <section>
+    <AboutView />
+  </section>
+  <section>
     <WorkView />
   </section>
 </template>
 
 <style lang="scss">
-header {
-  margin-block-end: 160px;
-}
 .wrapper {
   align-items: center;
   display: flex;
@@ -57,6 +58,6 @@ nav {
 }
 
 section {
-  margin-block-end: 190px;
+  padding: 5% 0;
 }
 </style>
