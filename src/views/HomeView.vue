@@ -1,9 +1,11 @@
 <script setup>
-import Hero from '../components/Hero.vue'
 </script>
 
 <template>
-  <main>
-    <Hero />
+  <main class="landing">
   </main>
 </template>
+
+<style lang="scss">
+
+</style>

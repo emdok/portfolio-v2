@@ -1,0 +1,44 @@
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+:root {
+  --color-text: #{$color-dark-gray};
+  --color-background: #{$color-off-white};
+}
+
+body {
+  min-height: 100vh;
+  color: var(--color-text);
+  background: var(--color-background);
+  line-height: 1.6;
+  font-family:
+    'Lexend',
+    sans-serif;
+  font-size: 15px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	flex: 1 0 auto;
+	margin: auto;
+	padding: 0;
+	position: relative;
+	width: 100%;
+}
+
+img {
+	display: block;
+	height: auto;
+	max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}

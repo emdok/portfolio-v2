@@ -14,5 +14,13 @@ export default defineConfig({
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
     }
-  }
+  },
+  css: {
+    preprocessorOptions: {
+      scss: {
+        // Prepend the `main.scss` content to every SFC
+        additionalData: `@import "@/assets/styles/main.scss";`
+      },
+    },
+  },
 })
