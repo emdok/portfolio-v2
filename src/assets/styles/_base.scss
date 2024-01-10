@@ -1,9 +1,7 @@
-@font-face {
-	src: url('../assets/fonts/Lexend-VariableFont_wght.ttf');
-	font-family: 'Lexend';
-	font-display: block;
-	font-weight: normal;
-	font-style: normal;
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
 }
 
 :root {

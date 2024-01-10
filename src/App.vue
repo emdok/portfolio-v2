@@ -4,13 +4,13 @@ import { RouterLink, RouterView } from 'vue-router'
 
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
 
     <div class="wrapper">
 
       <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
+        <RouterLink to="/">Work</RouterLink>
+        <RouterLink to="/">Technology</RouterLink>
+        <RouterLink to="/about">Contact</RouterLink>
       </nav>
     </div>
   </header>
@@ -18,6 +18,6 @@ import { RouterLink, RouterView } from 'vue-router'
   <RouterView />
 </template>
 
-<style scoped>
+<style lang="scss" >
 
 </style>

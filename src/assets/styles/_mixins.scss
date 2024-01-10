@@ -1,0 +1,26 @@
+@use 'sass:math';
+
+/* Responsive breakpoints */
+$bp-small: 390px; /* Mobile */
+$bp-medium: 640px; /* Tablet */
+$bp-large: 1024px; /* Laptop */
+$bp-xlarge: 1440px; /* Desktop */
+$bp-max: 1920px; /* Cinema */
+
+@mixin fluid-type-settings($font-size, $line-height) {
+	line-height: calc(#{$line-height} / #{$font-size});
+	font-size: calc(#{$font-size} / #{strip-unit($bp-small)} * 100vw);
+
+	@media (min-width: $bp-medium) {
+		font-size: calc(#{$font-size} / #{strip-unit($bp-medium)} * 100vw);
+	}
+	@media (min-width: $bp-large) {
+		font-size: calc(#{$font-size} / #{strip-unit($bp-large)} * 100vw);
+	}
+	@media (min-width: $bp-xlarge) {
+		font-size: calc(#{$font-size} / #{strip-unit($bp-xlarge)} * 100vw);
+	}
+	@media (min-width: $bp-max) {
+		font-size: calc(#{$font-size} / #{strip-unit($bp-max)} * 100vw);
+	}
+}
