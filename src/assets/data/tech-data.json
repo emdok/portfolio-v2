@@ -1,0 +1,19 @@
+{
+  "items": [
+    {
+      "id": "01",
+      "technologies": ["JavaScript", "NodeJS", "React", "MongoDB"],
+      "image": "/green-background.png"
+    },
+    {
+      "id": "02",
+      "technologies": ["Express", "MySQL", "HTML / CSS", "Mongoose"],
+      "image": "/yellow-background.png"
+    },
+    {
+      "id": "03",
+      "technologies": ["JavaScript", "NodeJS", "React", "MongoDB"],
+      "image": "/blue-background.png"
+    }
+  ]
+}

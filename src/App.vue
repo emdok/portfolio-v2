@@ -1,9 +1,10 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
-import Hero from './components/Hero.vue'
-import HeroImage from './components/HeroImage.vue'
-import AboutView from './views/AboutView.vue'
-import WorkView from './views/WorkView.vue'
+import Hero from '@/components/Hero.vue'
+import HeroImage from '@/components/HeroImage.vue'
+import AboutView from '@/views/AboutView.vue'
+import WorkView from '@/views/WorkView.vue'
+import TechView from '@/views/TechView.vue'
 </script>
 
 <template>
@@ -26,6 +27,9 @@ import WorkView from './views/WorkView.vue'
   </section>
   <section>
     <WorkView />
+  </section>
+  <section>
+    <TechView />
   </section>
 </template>
 
