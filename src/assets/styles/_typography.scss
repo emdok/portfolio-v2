@@ -2,6 +2,7 @@ $nav-font-size-lg: 24px;
 $nav-font-size-sm: 16px;
 $page-title-size-lg: 96px;
 $about-font-size-lg: 32px;
+$contact-form-size-lg: 20px;
 
 @font-face {
   src: url('../assets/fonts/Lexend-VariableFont_wght.ttf');
@@ -29,6 +30,13 @@ cite {
 
 h1 {
   font-weight: 700;
+}
+
+button {
+  border: 2px solid $color-dark-gray;
+  border-radius: 10px;
+  font-family: Lexend;
+  font-size: $contact-form-size-lg;
 }
 
 .page-title {
