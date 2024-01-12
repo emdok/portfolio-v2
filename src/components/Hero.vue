@@ -2,7 +2,7 @@
 
 <template>
   <div class="title">
-    <h1>Emily Dokken</h1>
+    <a href="/"><h1>Emily Dokken</h1></a>
   </div>
 </template>
 
@@ -16,5 +16,9 @@
     -2px 2px 0 #fff,
     2px 2px 0 #fff,
     -6px 10px 0px #d0ffd5;
+
+    a {
+      color: unset;
+    }
 }
 </style>

@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '@/views/HomeView.vue'
 import WorkView from '@/views/WorkView.vue'
 import TechView from '@/views/TechView.vue'
+import ContactView from '../views/ContactView.vue'
 
 
 const router = createRouter({
@@ -25,9 +26,25 @@ const router = createRouter({
     {
       path: '/contact',
       name: 'contact',
-      component: () => import('../views/ContactView.vue')
+      component: ContactView
     }
-  ]
+  ],
+  scrollBehavior(to, from, savedPosition) {
+    if (to.hash) {
+      return new Promise((resolve) => {
+        setTimeout(() => {
+          resolve({
+            el: to.hash,
+            behavior: 'smooth',
+          });
+        }, 300);
+      });
+    } else if (savedPosition) {
+      return savedPosition;
+    } else {
+      return { left: 0, top: 0, behavior: 'smooth' };
+    }
+  }
 })
 
 export default router

@@ -1,10 +1,6 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
 import Hero from '@/components/Hero.vue'
-import HeroImage from '@/components/HeroImage.vue'
-import AboutView from '@/views/AboutView.vue'
-import WorkView from '@/views/WorkView.vue'
-import TechView from '@/views/TechView.vue'
 </script>
 
 <template>
@@ -13,24 +9,14 @@ import TechView from '@/views/TechView.vue'
       <Hero />
       <div class="nav">
         <nav>
-          <RouterLink to="/">Work</RouterLink>
-          <RouterLink to="/">Technology</RouterLink>
+          <RouterLink to="/#work-section">Work</RouterLink>
+          <RouterLink to="/#tech-section">Technology</RouterLink>
           <RouterLink to="/contact">Contact</RouterLink>
         </nav>
       </div>
-      <HeroImage />
     </div>
   </header>
   <RouterView />
-  <section>
-    <AboutView />
-  </section>
-  <section>
-    <WorkView />
-  </section>
-  <section>
-    <TechView />
-  </section>
 </template>
 
 <style lang="scss">
