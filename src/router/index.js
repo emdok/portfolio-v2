@@ -30,22 +30,18 @@ const router = createRouter({
     }
   ],
   scrollBehavior(to, from, savedPosition) {
-    // if the route has a hash, scroll to it
     if (to.hash) {
       return new Promise((resolve) => {
-        // wait for the out transition to complete (if necessary)
         setTimeout(() => {
           resolve({
             el: to.hash,
             behavior: 'smooth',
           });
-        }, 300); // adjust the timeout to match your transition duration
+        }, 300);
       });
     } else if (savedPosition) {
-      // if saved position is available, scroll to it
       return savedPosition;
     } else {
-      // otherwise, scroll to the top
       return { left: 0, top: 0, behavior: 'smooth' };
     }
   }
