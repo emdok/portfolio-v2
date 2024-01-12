@@ -6,7 +6,7 @@ import TechView from '@/views/TechView.vue'
 </script>
 
 <template>
-  <main class="landing">
+  <div class="landing">
     <HeroImage />
     <section>
       <AboutView />
@@ -17,9 +17,12 @@ import TechView from '@/views/TechView.vue'
     <section id="tech-section">
       <TechView />
     </section>
-  </main>
+  </div>
 </template>
 
 <style lang="scss">
-
+  .landing {
+    display: flex;
+    flex-direction: column;
+  }
 </style>
