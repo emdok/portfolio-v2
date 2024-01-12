@@ -63,5 +63,6 @@ nav {
 
 section {
   padding: 5% 0;
+  margin-block-end: 100px;
 }
 </style>
