@@ -9,6 +9,7 @@
 
 <style lang="scss">
 .hero-image {
+  align-self: center;
   max-width: 30vw;
 }
 
