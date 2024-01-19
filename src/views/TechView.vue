@@ -24,7 +24,6 @@ import TechGrid from '@/components/TechGrid.vue'
   margin: 0 5%;
 
   @include mq(l) {
-    align-items: unset;
     flex-direction: row;
     &--title {
       flex: 5;
