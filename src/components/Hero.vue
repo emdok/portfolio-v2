@@ -15,10 +15,18 @@
     2px -2px 0 #fff,
     -2px 2px 0 #fff,
     2px 2px 0 #fff,
-    -6px 10px 0px #d0ffd5;
+    -3px 5px 0px #d0ffd5;
 
     a {
       color: unset;
     }
+  @include mq(l) {
+    text-shadow:
+    -2px -2px 0 #fff,
+    2px -2px 0 #fff,
+    -2px 2px 0 #fff,
+    2px 2px 0 #fff,
+    -6px 10px 0px #d0ffd5;
+  }
 }
 </style>

@@ -22,12 +22,38 @@ import ContactForm from '@/components/ContactForm.vue'
 <style lang="scss">
 .contact-view {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   margin-block-end: 100px;
-  margin-block-start: 100px;
-  &--title {
-    flex: 1;
-    width: 100%;
+  margin-block-start: 40px;
+
+  .page-title {
+    font-size: 60px;
+    text-shadow:
+      -2px -2px 0 #fff,
+      2px -2px 0 #fff,
+      -2px 2px 0 #fff,
+      2px 2px 0 #fff,
+      -4px 6px 0px #d0ffd5;
+  }
+
+  @include mq(l) {
+    flex-direction: row;
+    margin-block-start: 100px;
+    &--title {
+      flex: 1;
+      width: 100%;
+    }
+
+    .page-title {
+      font-size: 96px;
+      text-shadow:
+        -2px -2px 0 #fff,
+        2px -2px 0 #fff,
+        -2px 2px 0 #fff,
+        2px 2px 0 #fff,
+        -6px 10px 0px #d0ffd5;
+    }
   }
 }
 </style>

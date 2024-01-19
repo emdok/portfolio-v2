@@ -35,6 +35,18 @@ footer {
   li {
     list-style-type: none;
     padding: 20px;
+    img {
+        max-width: 75%;
+      }
+    @include mq(l) {
+      img {
+        max-width: 100%;
+      }
+    }
   }
+}
+
+ul.footer-links {
+  padding: unset;
 }
 </style>

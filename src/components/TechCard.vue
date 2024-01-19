@@ -36,10 +36,5 @@ const cardStyle = computed(() => {
     flex-direction: column;
     padding: 20px;
     margin-block-end: 20px;
-
-    li {
-      font-size: 30px;
-    }
-
   }
 </style>

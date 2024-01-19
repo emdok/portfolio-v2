@@ -1,7 +1,10 @@
+@import './mixins';
+
 $nav-font-size-lg: 24px;
 $nav-font-size-sm: 16px;
 $page-title-size-lg: 96px;
 $about-font-size-lg: 32px;
+$about-font-size-sm: 20px;
 $contact-form-size-lg: 20px;
 
 @font-face {
@@ -40,8 +43,9 @@ button {
 }
 
 .page-title {
-	display: flex;
-	flex-direction: column;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   font-size: $page-title-size-lg;
   font-weight: 700;
   text-shadow:
@@ -50,12 +54,32 @@ button {
     -2px 2px 0 #fff,
     2px 2px 0 #fff,
     -6px 10px 0px #d0ffd5;
+  @include mq(l) {
+    flex-direction: column;
+  }
 }
 
 .p2 {
-	font-size: $about-font-size-lg;
-	font-weight: 300;
-	&--bold {
-		font-weight: 500;
-	}
+  font-size: $about-font-size-sm;
+  font-weight: 300;
+  &--bold {
+    font-weight: 500;
+  }
+  @include mq(l) {
+    font-size: $about-font-size-lg;
+  }
+}
+
+.p3 {
+  font-size: 24px;
+  @include mq(l) {
+    font-size: 30px;
+  }
+}
+
+label {
+  font-size: 12px;
+  @include mq(l) {
+    font-size: 20px;
+  }
 }

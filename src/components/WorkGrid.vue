@@ -15,10 +15,15 @@ import WorkData from '../assets/data/work-data.json'
 
 <style lang="scss">
 .work-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(275px, 1fr));
-  row-gap: 30px;
   column-gap: 40px;
-  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(1, minmax(275px, 1fr));
+  place-items: center;
+  row-gap: 30px;
+  
+  @include mq(m) {
+    grid-template-columns: repeat(2, minmax(275px, 1fr));
+    width: 100%;
+  }
 }
 </style>

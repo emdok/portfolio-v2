@@ -45,7 +45,6 @@ function submitForm() {
 .contact-form-container {
   flex: 1;
   max-width: 600px;
-  margin: auto;
   padding: 1em;
 
   .form-group {
@@ -53,7 +52,6 @@ function submitForm() {
 
     label {
       display: block;
-      font-size: $contact-form-size-lg;
       margin-bottom: 0.5em;
     }
 
@@ -74,6 +72,10 @@ function submitForm() {
     textarea {
       height: 300px;
     }
+  }
+
+  @include mq(l) {
+    margin: auto;
   }
 }
 
