@@ -43,9 +43,11 @@ function submitForm() {
 
 <style lang="scss">
 .contact-form-container {
+  align-self: center;
   flex: 1;
   max-width: 600px;
   padding: 1em;
+  width: 100%;
 
   .form-group {
     margin-bottom: 1em;

@@ -33,6 +33,9 @@ watch(route, (newRoute) => {
 </template>
 
 <style lang="scss">
+header {
+  background: linear-gradient($color-light-orange 75%, rgba(0,0,0,0));;
+}
 .wrapper {
   align-items: center;
   display: flex;

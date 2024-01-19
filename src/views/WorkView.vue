@@ -20,9 +20,10 @@
   .work-view {
     align-items: center;
     display: flex;
+    flex: 1;
     flex-direction: column;
     justify-content: center;
-    flex: 1;
+    margin: 0 5%;
     @include mq(l) {
       flex-direction: row;
       &--title {

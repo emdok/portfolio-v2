@@ -23,9 +23,11 @@ import ContactForm from '@/components/ContactForm.vue'
 .contact-view {
   display: flex;
   flex-direction: column;
+  gap: 40px;
   justify-content: center;
   margin-block-end: 100px;
   margin-block-start: 40px;
+  margin: 5%;
 
   .page-title {
     font-size: 60px;
@@ -38,7 +40,7 @@ import ContactForm from '@/components/ContactForm.vue'
   }
 
   @include mq(l) {
-    flex-direction: row;
+    flex-direction: column;
     margin-block-start: 100px;
     &--title {
       flex: 1;
@@ -46,6 +48,7 @@ import ContactForm from '@/components/ContactForm.vue'
     }
 
     .page-title {
+      flex-direction: row;
       font-size: 96px;
       text-shadow:
         -2px -2px 0 #fff,
