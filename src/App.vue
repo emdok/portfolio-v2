@@ -1,13 +1,21 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
+import { watch, ref } from 'vue';
+import { RouterLink, RouterView, useRoute } from 'vue-router'
 import Hero from '@/components/Hero.vue'
 import Footer from './components/Footer.vue'
+
+const route = useRoute()
+const isNotContactRoute = ref(route.path !== '/contact')
+
+watch(route, (newRoute) => {
+  isNotContactRoute.value = newRoute.path !== '/contact'
+})
 </script>
 
 <template>
   <header>
     <div class="wrapper">
-      <Hero />
+      <Hero v-if="isNotContactRoute"/>
       <div class="nav">
         <nav>
           <RouterLink to="/#work-section">Work</RouterLink>
@@ -25,6 +33,9 @@ import Footer from './components/Footer.vue'
 </template>
 
 <style lang="scss">
+header {
+  background: linear-gradient($color-light-orange 75%, rgba(0,0,0,0));;
+}
 .wrapper {
   align-items: center;
   display: flex;
@@ -33,22 +44,29 @@ import Footer from './components/Footer.vue'
 }
 
 .nav {
-  width: 30%;
   margin: 25px auto;
+  @include mq(l) {
+    width: 30%;
+    width: 55vw;
+  }
 }
 
 nav {
   display: flex;
-  font-size: $nav-font-size-lg;
+  font-size: $nav-font-size-sm;
   font-weight: 500;
   justify-content: space-between;
   text-transform: uppercase;
   width: 100%;
   a {
     color: $color-dark-gray;
+    padding: 0 6px;
     &:hover {
       text-shadow: -2px 3px 0px $color-light-green;
     }
+  }
+  @include mq(l) {
+    font-size: $nav-font-size-lg;
   }
 }
 

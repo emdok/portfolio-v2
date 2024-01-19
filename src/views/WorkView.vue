@@ -18,11 +18,17 @@
 
 <style lang="scss">
   .work-view {
+    align-items: center;
     display: flex;
-    justify-content: center;
     flex: 1;
-    &--title {
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 5%;
+    @include mq(l) {
+      flex-direction: row;
+      &--title {
       width: 100%;
+    }
     }
   }
 </style>

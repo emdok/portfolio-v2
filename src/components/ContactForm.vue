@@ -43,17 +43,17 @@ function submitForm() {
 
 <style lang="scss">
 .contact-form-container {
+  align-self: center;
   flex: 1;
   max-width: 600px;
-  margin: auto;
   padding: 1em;
+  width: 100%;
 
   .form-group {
     margin-bottom: 1em;
 
     label {
       display: block;
-      font-size: $contact-form-size-lg;
       margin-bottom: 0.5em;
     }
 
@@ -74,6 +74,10 @@ function submitForm() {
     textarea {
       height: 300px;
     }
+  }
+
+  @include mq(l) {
+    margin: auto;
   }
 }
 
