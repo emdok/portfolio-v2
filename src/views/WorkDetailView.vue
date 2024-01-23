@@ -21,16 +21,17 @@ import WorkCard from '@/components/WorkCard.vue'
       </div>
     </div>
     <div class="work-detail__delimeter"></div>
-    <div class="work-detail__additional-content">
-      <p class="work-detail__additional-content__text">
+    <div class="work-detail__additional-content__top">
+      <p class="work-detail__additional-content__top__text">
         Sed mollis, eros et ultrices tempus, mauris ipsum aliquam libero, non adipiscing dolor urna
         a orci. Maecenas malesuada. Cras dapibus. Vestibulum facilisis, purus nec pulvinar iaculis,
         ligula mi congue nunc, vitae euismod ligula urna in dolor. Vivamus elementum semper nisi.
       </p>
       <WorkCard />
-      <div class="work-detail__additional-content__break"></div>
+    </div>
+    <div class="work-detail__additional-content__bottom">
       <WorkCard />
-      <p class="work-detail__additional-content__text-2">
+      <p class="work-detail__additional-content__bottom__text">
         Sed mollis, eros et ultrices tempus, mauris ipsum aliquam libero, non adipiscing dolor urna
         a orci. Maecenas malesuada. Cras dapibus. Vestibulum facilisis, purus nec pulvinar iaculis,
         ligula mi congue nunc, vitae euismod ligula urna in dolor. Vivamus elementum semper nisi.
@@ -48,13 +49,25 @@ import WorkCard from '@/components/WorkCard.vue'
     display: flex;
     justify-content: center;
     margin-block-start: 62px;
+    text-align: center;
   }
 
   &__intro {
     display: flex;
+    flex-direction: column;
     gap: 50px;
     justify-content: center;
     margin-block-start: 140px;
+    .work-card, &__content {
+      align-self: center;
+    }
+
+    @include mq(xl) {
+      flex-direction: row;
+      .work-card, &__content {
+        align-self: unset;
+      }
+    }
 
     &__tech {
       span {
@@ -69,22 +82,39 @@ import WorkCard from '@/components/WorkCard.vue'
   }
 
   &__additional-content {
-    align-items: center;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 50px;
-    justify-content: center;
-    margin-block-start: 100px;
-    margin-block-end: 270px;
-
-    &__text,
-    &__text-2 {
-      max-width: 600px;
+    &__top {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+      justify-content: center;
+      margin-block-start: 100px;
+      &__text {
+        order: 1;
+      }
+      @include mq(xl) {
+        flex-direction: row;
+        &__text {
+          order: unset;
+        }
+      }
     }
 
-    &__break {
-      flex-basis: 100%;
-      height: 0;
+    &__bottom {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+      justify-content: center;
+      margin-block-start: 100px;
+      margin-block-end: 270px;
+      @include mq(xl) {
+        flex-direction: row;
+      }
+    }
+
+    &__top__text, &__bottom__text {
+      max-width: 600px;
     }
   }
 

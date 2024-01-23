@@ -87,9 +87,12 @@ label {
 
 @mixin work-detail-heading {
   color: $color-dark-gray;
-  text-shadow: 2px 6px 0px #fff;
-  font-size: 64px;
+  text-shadow: -2px 6px 0px #fff;
+  font-size: 36px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  @include mq(l) {
+    font-size: 64px;
+  }
 }
