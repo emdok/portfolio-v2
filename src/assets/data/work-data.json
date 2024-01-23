@@ -2,27 +2,27 @@
   "items": [
     {
       "id": "01",
-      "title": "Item 1",
+      "title": "Salesforce | Quiz & Recap",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "images": ["https://picsum.photos/275/300", "https://picsum.photos/275/300", "https://picsum.photos/275/300"]
+      "images": ["work-img/dreamforce/dreamforce-recap.png", "https://picsum.photos/275/300", "https://picsum.photos/275/300"]
     },
     {
       "id": "02",
-      "title": "Item 2",
-      "description": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      "images": ["https://picsum.photos/275/300", "https://picsum.photos/275/300"]
+      "title": "Instrument Dot Com",
+      "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+      "images": ["/work-img/instrument/instrument-home.png", "https://picsum.photos/275/300", "https://picsum.photos/275/300", "https://picsum.photos/275/300"]
     },
     {
       "id": "03",
-      "title": "Item 3",
-      "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
-      "images": ["https://picsum.photos/275/300", "https://picsum.photos/275/300", "https://picsum.photos/275/300", "https://picsum.photos/275/300"]
+      "title": "Asteroids",
+      "description": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "images": ["/work-img/asteroids/asteroids-home.png", "https://picsum.photos/275/300"]
     },
     {
       "id": "04",
-      "title": "Item 4",
+      "title": "Plantzzz",
       "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.",
-      "images": ["https://picsum.photos/275/300"]
+      "images": ["/work-img/plantzzz/plantzzz-home.png"]
     }
   ]
 }
