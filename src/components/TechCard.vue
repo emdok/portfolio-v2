@@ -28,8 +28,8 @@ const cardStyle = computed(() => {
 
 <style lang="scss">
   .tech-card {
-    width: 375px;
-    height: 375px;
+    width: 400px;
+    height: 320px;
     display: flex;
     align-items: center;
     justify-content: center;

@@ -1,21 +1,21 @@
 <script setup>
-import { watch, ref } from 'vue';
+import { watch, ref } from 'vue'
 import { RouterLink, RouterView, useRoute } from 'vue-router'
 import Hero from '@/components/Hero.vue'
 import Footer from './components/Footer.vue'
 
 const route = useRoute()
-const isNotContactRoute = ref(route.path !== '/contact')
+const preventHeroDisplay = ref(route.path !== '/contact' && route.path !== '/work-detail')
 
 watch(route, (newRoute) => {
-  isNotContactRoute.value = newRoute.path !== '/contact'
+  preventHeroDisplay.value = newRoute.path !== '/contact' && newRoute.path !== '/work-detail'
 })
 </script>
 
 <template>
   <header>
     <div class="wrapper">
-      <Hero v-if="isNotContactRoute"/>
+      <Hero v-if="preventHeroDisplay" />
       <div class="nav">
         <nav>
           <RouterLink to="/#work-section">Work</RouterLink>
@@ -34,7 +34,7 @@ watch(route, (newRoute) => {
 
 <style lang="scss">
 header {
-  background: linear-gradient($color-light-orange 75%, rgba(0,0,0,0));;
+  background: linear-gradient($color-light-orange 75%, rgba(0, 0, 0, 0));
 }
 .wrapper {
   align-items: center;
