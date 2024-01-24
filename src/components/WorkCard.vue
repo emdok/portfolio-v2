@@ -21,18 +21,30 @@ const navigateToWorkDetail = (id) => {
 
 <style lang="scss">
 .work-card {
+  aspect-ratio: 4 / 5;
   background: $color-light-gray;
   border: 2px solid $color-dark-gray;
   border-radius: 10px;
   box-shadow: -3px 3px $color-dark-gray;
-  width: 275px;
-  height: 300px;
+  width: 300px;
+  height: auto;
   overflow: hidden;
 
   img {
     height: 100%;
     width: 100%;
     object-fit: cover;
+  }
+
+  &:hover {
+    cursor: pointer;
+    border-color: $color-burnt-orange;
+    box-shadow: -3px 3px $color-burnt-orange;
+  }
+
+  &:active {
+    box-shadow: unset;
+    transform: translateX(-3px) translateY(3px);
   }
 }
 </style>

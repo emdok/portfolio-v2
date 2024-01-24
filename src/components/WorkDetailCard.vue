@@ -1,20 +1,27 @@
 <script setup>
+import { defineProps } from 'vue';
+
+const props = defineProps({
+  image: String
+})
 
 </script>
 
 <template>
-  <div class="work-card">
-
+  <div class="work-detail-card">
+    <img :src="image" />
   </div>
 </template>
 
 <style lang="scss">
-  .work-card {
-    background: $color-light-gray;
-    border: 2px solid $color-dark-gray;
-    border-radius: 10px;
-    box-shadow: -3px 3px $color-dark-gray;
-    width: 275px;
-    height: 300px;
+  .work-detail-card {
+    img {
+      border-radius: 45px;
+      height: auto;
+      max-width: 400px;
+      object-fit: contain;
+      box-shadow: -3px 3px $color-dark-gray;
+      overflow: hidden;
+    }
   }
 </style>

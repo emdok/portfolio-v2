@@ -7,6 +7,8 @@ import { ref } from 'vue'
 const route = useRoute()
 const workDetail = ref(null)
 
+console.log(WorkData)
+
 const workId = route.params.id
 workDetail.value = WorkData.items.find((item) => item.id === workId)
 </script>
@@ -15,35 +17,31 @@ workDetail.value = WorkData.items.find((item) => item.id === workId)
   <div class="work-detail">
     <h1 class="work-detail__heading">{{ workDetail.title }}</h1>
     <div class="work-detail__intro">
-      <WorkDetailCard />
+      <video v-if="workDetail.video" autoplay muted loop playsinline controls>
+        <source :src="workDetail.video" type="video/mp4"/>
+      </video>
+      <WorkDetailCard v-else :image="workDetail.images[0]" />
       <div class="work-detail__intro__content">
         <p class="work-detail__intro__tech">
           <span>Tech:</span><br />
-          Next.js | Lottie | Gsap
+          {{ workDetail.tech }}
         </p>
         <p class="work-detail__intro__text">
-          Sed mollis, eros et ultrices tempus, mauris ipsum aliquam libero, non adipiscing dolor
-          urna a orci. Maecenas malesuada. Cras dapibus. Vestibulum facilisis, purus nec pulvinar
-          iaculis, ligula mi congue nunc, vitae euismod ligula urna in dolor. Vivamus elementum
-          semper nisi.
+          {{ workDetail.description }}
         </p>
       </div>
     </div>
     <div class="work-detail__delimeter"></div>
     <div class="work-detail__additional-content__top">
       <p class="work-detail__additional-content__top__text">
-        Sed mollis, eros et ultrices tempus, mauris ipsum aliquam libero, non adipiscing dolor urna
-        a orci. Maecenas malesuada. Cras dapibus. Vestibulum facilisis, purus nec pulvinar iaculis,
-        ligula mi congue nunc, vitae euismod ligula urna in dolor. Vivamus elementum semper nisi.
+        {{ workDetail.additionalDesc1 }}
       </p>
-      <WorkDetailCard />
+      <WorkDetailCard :image="workDetail.images[1]" />
     </div>
     <div class="work-detail__additional-content__bottom">
-      <WorkDetailCard />
+      <WorkDetailCard :image="workDetail.images[2]" />
       <p class="work-detail__additional-content__bottom__text">
-        Sed mollis, eros et ultrices tempus, mauris ipsum aliquam libero, non adipiscing dolor urna
-        a orci. Maecenas malesuada. Cras dapibus. Vestibulum facilisis, purus nec pulvinar iaculis,
-        ligula mi congue nunc, vitae euismod ligula urna in dolor. Vivamus elementum semper nisi.
+        {{ workDetail.additionalDesc2 }}
       </p>
     </div>
   </div>
@@ -62,11 +60,20 @@ workDetail.value = WorkData.items.find((item) => item.id === workId)
   }
 
   &__intro {
+    align-items: center;
     display: flex;
     flex-direction: column;
     gap: 50px;
     justify-content: center;
     margin-block-start: 140px;
+
+    video {
+      border-radius: 20px;
+      box-shadow: -3px 3px $color-dark-gray;
+      max-width: 400px;
+      height: auto;
+    }
+
     .work-card,
     &__content {
       align-self: center;

@@ -3,26 +3,39 @@
     {
       "id": "recap",
       "title": "Salesforce | Quiz & Recap",
+      "tech": "Next.js | Lottie | Gsap",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "images": ["work-img/dreamforce/dreamforce-recap.png", "https://picsum.photos/275/300", "https://picsum.photos/275/300"]
+      "additionalDesc1": "Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+      "additionalDesc2": "Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+      "images": ["/work-img/dreamforce/dreamforce-recap.png", "/work-img/dreamforce/quiz-question.png", "/work-img/dreamforce/quiz-recap.png"],
+      "video": "/work-img/dreamforce/recap-video.mp4"
     },
     {
       "id": "instrument",
       "title": "Instrument Dot Com",
+      "tech": "Nuxt 3| Vue 3 | Pinia | Storyblok | Netlify",
       "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+      "additionalDesc1": "Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+      "additionalDesc2": "Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
       "images": ["/work-img/instrument/instrument-home.png", "https://picsum.photos/275/300", "https://picsum.photos/275/300", "https://picsum.photos/275/300"]
     },
     {
       "id": "asteroids",
       "title": "Asteroids",
+      "tech": "MongoDB | Express | React",
       "description": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "additionalDesc1": "Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+      "additionalDesc2": "Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
       "images": ["/work-img/asteroids/asteroids-home.png", "https://picsum.photos/275/300"]
     },
     {
       "id": "plantzzz",
       "title": "Plantzzz",
+      "tech": "JavaScript | Express | Sequelize | Handlebars-js | MySQL2",
       "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.",
-      "images": ["/work-img/plantzzz/plantzzz-home.png"]
+      "additionalDesc1": "Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+      "additionalDesc2": "Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+      "images": ["/work-img/plantzzz/plantzzz-home.png", "/work-img/plantzzz/plantzzz-dashboard.png", "/work-img/plantzzz/plantzzz-edit.png"]
     }
   ]
 }
