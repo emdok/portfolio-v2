@@ -1,12 +1,21 @@
 <script setup>
-import WorkCard from '@/components/WorkCard.vue'
+import WorkDetailCard from '@/components/WorkDetailCard.vue'
+import WorkData from '../assets/data/work-data.json'
+import { useRoute } from 'vue-router'
+import { ref } from 'vue'
+
+const route = useRoute()
+const workDetail = ref(null)
+
+const workId = route.params.id
+workDetail.value = WorkData.items.find((item) => item.id === workId)
 </script>
 
 <template>
   <div class="work-detail">
-    <h1 class="work-detail__heading">Salesforce | Quiz & Recap</h1>
+    <h1 class="work-detail__heading">{{ workDetail.title }}</h1>
     <div class="work-detail__intro">
-      <WorkCard />
+      <WorkDetailCard />
       <div class="work-detail__intro__content">
         <p class="work-detail__intro__tech">
           <span>Tech:</span><br />
@@ -27,10 +36,10 @@ import WorkCard from '@/components/WorkCard.vue'
         a orci. Maecenas malesuada. Cras dapibus. Vestibulum facilisis, purus nec pulvinar iaculis,
         ligula mi congue nunc, vitae euismod ligula urna in dolor. Vivamus elementum semper nisi.
       </p>
-      <WorkCard />
+      <WorkDetailCard />
     </div>
     <div class="work-detail__additional-content__bottom">
-      <WorkCard />
+      <WorkDetailCard />
       <p class="work-detail__additional-content__bottom__text">
         Sed mollis, eros et ultrices tempus, mauris ipsum aliquam libero, non adipiscing dolor urna
         a orci. Maecenas malesuada. Cras dapibus. Vestibulum facilisis, purus nec pulvinar iaculis,
@@ -58,13 +67,15 @@ import WorkCard from '@/components/WorkCard.vue'
     gap: 50px;
     justify-content: center;
     margin-block-start: 140px;
-    .work-card, &__content {
+    .work-card,
+    &__content {
       align-self: center;
     }
 
     @include mq(xl) {
       flex-direction: row;
-      .work-card, &__content {
+      .work-card,
+      &__content {
         align-self: unset;
       }
     }
@@ -113,7 +124,8 @@ import WorkCard from '@/components/WorkCard.vue'
       }
     }
 
-    &__top__text, &__bottom__text {
+    &__top__text,
+    &__bottom__text {
       max-width: 600px;
     }
   }

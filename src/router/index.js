@@ -30,7 +30,7 @@ const router = createRouter({
       component: ContactView
     },
     {
-      path: '/work-detail',
+      path: '/work-detail/:id',
       name: 'work-detail',
       component: WorkDetailView
     }

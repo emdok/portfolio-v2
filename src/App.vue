@@ -5,10 +5,11 @@ import Hero from '@/components/Hero.vue'
 import Footer from './components/Footer.vue'
 
 const route = useRoute()
-const preventHeroDisplay = ref(route.path !== '/contact' && route.path !== '/work-detail')
+const preventHeroDisplay = ref(route.path !== '/contact' && !route.path.startsWith('/work-detail'))
 
 watch(route, (newRoute) => {
-  preventHeroDisplay.value = newRoute.path !== '/contact' && newRoute.path !== '/work-detail'
+  preventHeroDisplay.value =
+    newRoute.path !== '/contact' && !newRoute.path.startsWith('/work-detail')
 })
 </script>
 
