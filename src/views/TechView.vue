@@ -22,12 +22,16 @@ import TechGrid from '@/components/TechGrid.vue'
   display: flex;
   flex-direction: column;
   margin: 0 5%;
+  &--title {
+    margin-block-end: 100px;
+  }
 
   @include mq(l) {
     flex-direction: row;
     &--title {
       flex: 5;
       width: 100%;
+      margin-block-end: unset;
     }
   }
 }
