@@ -19,6 +19,7 @@ watch(route, (newRoute) => {
       <Hero v-if="preventHeroDisplay" />
       <div class="nav">
         <nav>
+          <RouterLink v-if="!preventHeroDisplay" to="/"><img class="home" src="/home.svg" alt="home"></RouterLink>
           <RouterLink to="/#work-section">Work</RouterLink>
           <RouterLink to="/#tech-section">Technology</RouterLink>
           <RouterLink to="/contact">Contact</RouterLink>
@@ -53,6 +54,7 @@ header {
 }
 
 nav {
+  align-items: center;
   display: flex;
   font-size: $nav-font-size-sm;
   font-weight: 500;

@@ -43,3 +43,11 @@ img {
 a {
   text-decoration: none;
 }
+
+.home {
+  color: $color-dark-gray;
+  width: 15px;
+  @include mq(l) {
+    width: 30px;
+  }
+}

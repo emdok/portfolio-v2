@@ -24,10 +24,16 @@
     flex-direction: column;
     justify-content: center;
     margin: 0 5%;
+
+    &--title {
+      margin-block-end: 100px;
+    }
+
     @include mq(l) {
       flex-direction: row;
       &--title {
       width: 100%;
+      margin-block-end: unset;
     }
     }
   }
