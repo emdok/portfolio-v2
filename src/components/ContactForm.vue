@@ -1,5 +1,5 @@
 <script setup>
-import { ref } from 'vue'
+import { computed, ref } from 'vue'
 
 const form = ref({
   name: '',
@@ -7,15 +7,39 @@ const form = ref({
   message: ''
 })
 
-function submitForm() {
-  // Handle the form submission
-  console.log(form.value) // Replace with actual submission logic
-}
+const isFormValid = computed(() => {
+  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+  return form.value.name.trim() && emailPattern.test(form.value.email)
+})
 
-// function downloadResume() {
-//   // Logic to download the resume
-//   console.log('Downloading resume...') // Replace with actual download logic
-// }
+const isEmailSent = ref(false)
+
+async function submitForm() {
+  if (!isFormValid.value) {
+    console.error('The form is invalid.')
+    return
+  }
+
+  try {
+    const response = await fetch('http://localhost:3000/send-email', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(form.value)
+    })
+    if (response.ok) {
+      console.log('Email sent successfully')
+      isEmailSent.value = true
+    } else {
+      console.error('Failed to send email')
+      isEmailSent.value = false
+    }
+  } catch (error) {
+    console.error('Error: ', error)
+    isEmailSent.value = false
+  }
+}
 </script>
 
 <template>
@@ -23,12 +47,15 @@ function submitForm() {
     <form @submit.prevent="submitForm">
       <div class="form-group">
         <label for="name">Name:</label>
-        <input type="text" id="name" v-model="form.name" />
+        <input type="text" id="name" v-model="form.name" required />
       </div>
 
       <div class="form-group">
         <label for="email">Email:</label>
-        <input type="email" id="email" v-model="form.email" />
+        <input type="email" id="email" v-model="form.email" required />
+        <span v-if="form.email && !isFormValid" class="form-group__error"
+          >Please enter a valid email address.</span
+        >
       </div>
 
       <div class="form-group">
@@ -37,6 +64,7 @@ function submitForm() {
       </div>
 
       <button type="submit">Submit</button>
+      <span v-if="isEmailSent" class="contact-form-container__email-success">Email Sent!</span>
     </form>
   </div>
 </template>
@@ -51,6 +79,9 @@ function submitForm() {
 
   .form-group {
     margin-bottom: 1em;
+    &__error {
+      color: $color-burnt-orange;
+    }
 
     label {
       display: block;
