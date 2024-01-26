@@ -12,6 +12,8 @@ const isFormValid = computed(() => {
   return form.value.name.trim() && emailPattern.test(form.value.email)
 })
 
+const isEmailSent = ref(false)
+
 async function submitForm() {
   if (!isFormValid.value) {
     console.error('The form is invalid.')
@@ -28,11 +30,14 @@ async function submitForm() {
     })
     if (response.ok) {
       console.log('Email sent successfully')
+      isEmailSent.value = true
     } else {
       console.error('Failed to send email')
+      isEmailSent.value = false
     }
   } catch (error) {
     console.error('Error: ', error)
+    isEmailSent.value = false
   }
 }
 </script>
@@ -42,12 +47,12 @@ async function submitForm() {
     <form @submit.prevent="submitForm">
       <div class="form-group">
         <label for="name">Name:</label>
-        <input type="text" id="name" v-model="form.name" required/>
+        <input type="text" id="name" v-model="form.name" required />
       </div>
 
       <div class="form-group">
         <label for="email">Email:</label>
-        <input type="email" id="email" v-model="form.email" required/>
+        <input type="email" id="email" v-model="form.email" required />
         <span v-if="form.email && !isFormValid" class="form-group__error"
           >Please enter a valid email address.</span
         >
@@ -59,6 +64,7 @@ async function submitForm() {
       </div>
 
       <button type="submit">Submit</button>
+      <span v-if="isEmailSent" class="contact-form-container__email-success">Email Sent!</span>
     </form>
   </div>
 </template>
