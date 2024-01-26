@@ -2,17 +2,17 @@
   "items": [
     {
       "id": "01",
-      "technologies": ["JavaScript", "NodeJS", "React", "MongoDB"],
+      "technologies": ["JavaScript", "React", "Swift", "Vue"],
       "image": "/green-background.png"
     },
     {
       "id": "02",
-      "technologies": ["Express", "MySQL", "HTML / CSS", "Mongoose"],
+      "technologies": ["Express", "MySQL", "Mongoose", "NextJS"],
       "image": "/yellow-background.png"
     },
     {
       "id": "03",
-      "technologies": ["JavaScript", "NodeJS", "React", "MongoDB"],
+      "technologies": ["AEM", "Cypress.io", "Astro", "Angular"],
       "image": "/blue-background.png"
     }
   ]

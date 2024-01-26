@@ -18,8 +18,8 @@
 
 <style lang="scss">
 footer {
-  position: absolute;
-  left: 0;
+  position: fixed;
+  bottom: 0;
   height: 75px;
   width: 100%;
   background-color: $color-light-orange;

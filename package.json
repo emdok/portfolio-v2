@@ -12,6 +12,8 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
+    "@sendgrid/mail": "^8.1.0",
+    "axios": "^1.6.5",
     "vue": "^3.3.11",
     "vue-router": "^4.2.5"
   },
