@@ -1,5 +1,5 @@
 <script setup>
-import { ref } from 'vue'
+import { computed, ref } from 'vue'
 
 const form = ref({
   name: '',
@@ -7,7 +7,17 @@ const form = ref({
   message: ''
 })
 
+const isFormValid = computed(() => {
+  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+  return form.value.name.trim() && emailPattern.test(form.value.email)
+})
+
 async function submitForm() {
+  if (!isFormValid.value) {
+    console.error('The form is invalid.')
+    return
+  }
+
   try {
     const response = await fetch('http://localhost:3000/send-email', {
       method: 'POST',
@@ -32,12 +42,15 @@ async function submitForm() {
     <form @submit.prevent="submitForm">
       <div class="form-group">
         <label for="name">Name:</label>
-        <input type="text" id="name" v-model="form.name" />
+        <input type="text" id="name" v-model="form.name" required/>
       </div>
 
       <div class="form-group">
         <label for="email">Email:</label>
-        <input type="email" id="email" v-model="form.email" />
+        <input type="email" id="email" v-model="form.email" required/>
+        <span v-if="form.email && !isFormValid" class="form-group__error"
+          >Please enter a valid email address.</span
+        >
       </div>
 
       <div class="form-group">
@@ -60,6 +73,9 @@ async function submitForm() {
 
   .form-group {
     margin-bottom: 1em;
+    &__error {
+      color: $color-burnt-orange;
+    }
 
     label {
       display: block;
