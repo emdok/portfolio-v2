@@ -7,15 +7,24 @@ const form = ref({
   message: ''
 })
 
-function submitForm() {
-  // Handle the form submission
-  console.log(form.value) // Replace with actual submission logic
+async function submitForm() {
+  try {
+    const response = await fetch('http://localhost:3000/send-email', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(form.value)
+    })
+    if (response.ok) {
+      console.log('Email sent successfully')
+    } else {
+      console.error('Failed to send email')
+    }
+  } catch (error) {
+    console.error('Error: ', error)
+  }
 }
-
-// function downloadResume() {
-//   // Logic to download the resume
-//   console.log('Downloading resume...') // Replace with actual download logic
-// }
 </script>
 
 <template>
