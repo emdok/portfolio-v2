@@ -18,7 +18,7 @@
 
 <style lang="scss">
 footer {
-  position: relative;
+  position: fixed;
   bottom: 0;
   height: 75px;
   width: 100%;

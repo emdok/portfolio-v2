@@ -18,13 +18,27 @@ workDetail.value = WorkData.items.find((item) => item.id === workId)
     <h1 class="work-detail__heading">{{ workDetail.title }}</h1>
     <div class="work-detail__intro">
       <video v-if="workDetail.video" autoplay muted loop playsinline controls>
-        <source :src="workDetail.video" type="video/mp4"/>
+        <source :src="workDetail.video" type="video/mp4" />
       </video>
       <WorkDetailCard v-else :image="workDetail.images[0]" />
       <div class="work-detail__intro__content">
         <p class="work-detail__intro__tech">
           <span>Tech:</span><br />
           {{ workDetail.tech }}
+        </p>
+        <p v-if="workDetail.repo" class="work-detail__intro__repo">
+          <a
+            :href="workDetail.repo"
+            target="_blank"
+            >Repository</a
+          >
+        </p>
+        <p v-if="workDetail.live" class="work-detail__intro__live">
+          <a
+            :href="workDetail.live"
+            target="_blank"
+            >Live</a
+          >
         </p>
         <p class="work-detail__intro__text">
           {{ workDetail.description }}
@@ -141,6 +155,13 @@ workDetail.value = WorkData.items.find((item) => item.id === workId)
     width: 100%;
     border-bottom: 4px dashed $color-dark-gray;
     margin-block-start: 100px;
+  }
+
+  a {
+    color: $color-burnt-orange;
+    &:hover {
+      font-weight: 600;
+    }
   }
 }
 </style>

@@ -4,37 +4,42 @@
       "id": "recap",
       "title": "Salesforce | Quiz & Recap",
       "tech": "Next.js | Lottie | Gsap",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "additionalDesc1": "Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
-      "additionalDesc2": "Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+      "description": "Just in time for Dreamforce 2023, my team and I were tasked with building quiz and Dreamforce Recap experience for attendees of the Dreamforce2023 conference using Next.js.",
+      "additionalDesc1": "Using the quiz, we gathered information about Attendee's interests. Through the use of Rainfocus' api, we were able to gather this information in one place, and easily access it on demand. We used the Attendee's selected interests to then provide them with activity and session recommendations while they attended the conference.",
+      "additionalDesc2": "At the conclusion of the conference each attendee was provided a personalized Dreamforce Recap experience. To create this experience, my team and I built an intelligent algorithm to parse stored attendee activity and serve specific Lottie and GSAP animations, as well as curated .MP4's. User's were able to share their recap experience by way of our sharing component, making use of the HTML5 canvas element.",
       "images": ["/work-img/dreamforce/dreamforce-recap.png", "/work-img/dreamforce/quiz-question.png", "/work-img/dreamforce/quiz-recap.png"],
       "video": "/work-img/dreamforce/recap-video.mp4"
     },
     {
       "id": "instrument",
       "title": "Instrument Dot Com",
-      "tech": "Nuxt 3| Vue 3 | Pinia | Storyblok | Netlify",
-      "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
-      "additionalDesc1": "Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
-      "additionalDesc2": "Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
-      "images": ["/work-img/instrument/instrument-home.png", "https://picsum.photos/275/300", "https://picsum.photos/275/300", "https://picsum.photos/275/300"]
+      "tech": "Nuxt 3 | Vue 3 | Pinia | Storyblok | Netlify",
+      "description": "In 2023 Instrument.com went through an entire rebrand, and through collaboration with our design team and my fellow development team, we brought the new site to life.",
+      "additionalDesc1": "My main role in the project was to introduce animation to the site using the GSAP library. GSAP's ScrollTrigger method played a huge part in animation different aspects of the site. We created a global function for each GSAP method we needed to implement within the site, and by passing specific props to this global method, we were able to easily organize our code and re-use animations throughout the site.",
+      "additionalDesc2": "The rebrand of the Instrument.com was a cross agency effort, and I was delighted to have the opportunity to contribute.",
+      "images": ["/work-img/instrument/instrument-home.png", "/work-img/instrument/instrument-home.png", "/work-img/instrument/work-grid.png"],
+      "video": "/work-img/instrument/scroll-animation.mp4"
     },
     {
       "id": "asteroids",
       "title": "Asteroids",
-      "tech": "MongoDB | Express | React",
-      "description": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      "additionalDesc1": "Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
-      "additionalDesc2": "Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
-      "images": ["/work-img/asteroids/asteroids-home.png", "https://picsum.photos/275/300"]
+      "tech": "MongoDB | Express | React | GraphQL",
+      "repo": "https://github.com/ChrisKurz098/NASAteroids",
+      "live": "https://asteroids.onrender.com/",
+      "description": "For our final project in the University of Oregon Fullstack Coding Bootcamp, my group and I decided to re-build the beloved game Asteroids using the MERN stack.",
+      "additionalDesc1": "We used Javascript and React to recreate the Asteroids game engine. Global state played a major role keeping track of gameplay and player's scores.",
+      "additionalDesc2": "A Gameplayer could create a profile, progress through gameplay until they lost all three of their lives, and then have their high score added to the leaderboard as well as their profile.",
+      "images": ["/work-img/asteroids/asteroids-home.png","/work-img/asteroids/game-play.png", "/work-img/asteroids/profile.png"]
     },
     {
       "id": "plantzzz",
       "title": "Plantzzz",
       "tech": "JavaScript | Express | Sequelize | Handlebars-js | MySQL2",
-      "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.",
-      "additionalDesc1": "Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
-      "additionalDesc2": "Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+      "repo": "https://github.com/emdok/Plantzzz",
+      "live": "https://plantzzz.herokuapp.com",
+      "description": "Plantzzz is an app that allows you to consolidate your house plants into a personal database. It will remind you of watering dates, provide helpful information about all kinds of plants, as well as the ability to manage each plant you've added within your account.",
+      "additionalDesc1": "We utilized SQL Server express to store plant and account data, as well as sequelize and handlebars to handle and display the data.",
+      "additionalDesc2": "My group and built this app while we attended the University of Oregon Fullstack Web Developmet Bootcamp.",
       "images": ["/work-img/plantzzz/plantzzz-home.png", "/work-img/plantzzz/plantzzz-dashboard.png", "/work-img/plantzzz/plantzzz-edit.png"]
     }
   ]
