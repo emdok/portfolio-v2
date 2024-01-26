@@ -4,7 +4,7 @@ import bodyParser from 'body-parser';
 import dotenv from 'dotenv';
 import cors from 'cors';
 
-dotenv.config();
+dotenv.config(); 
 const app = express();
 const port = 3000;
 
