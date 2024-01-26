@@ -7,8 +7,6 @@ import { ref } from 'vue'
 const route = useRoute()
 const workDetail = ref(null)
 
-console.log(WorkData)
-
 const workId = route.params.id
 workDetail.value = WorkData.items.find((item) => item.id === workId)
 </script>
@@ -27,18 +25,10 @@ workDetail.value = WorkData.items.find((item) => item.id === workId)
           {{ workDetail.tech }}
         </p>
         <p v-if="workDetail.repo" class="work-detail__intro__repo">
-          <a
-            :href="workDetail.repo"
-            target="_blank"
-            >Repository</a
-          >
+          <a :href="workDetail.repo" target="_blank">Repository</a>
         </p>
         <p v-if="workDetail.live" class="work-detail__intro__live">
-          <a
-            :href="workDetail.live"
-            target="_blank"
-            >Live</a
-          >
+          <a :href="workDetail.live" target="_blank">Live</a>
         </p>
         <p class="work-detail__intro__text">
           {{ workDetail.description }}

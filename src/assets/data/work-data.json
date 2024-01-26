@@ -4,9 +4,9 @@
       "id": "recap",
       "title": "Salesforce | Quiz & Recap",
       "tech": "Next.js | Lottie | Gsap",
-      "description": "Just in time for Dreamforce 2023, my team and I were tasked with building quiz and Dreamforce Recap experience for attendees of the Dreamforce2023 conference using Next.js.",
-      "additionalDesc1": "Using the quiz, we gathered information about Attendee's interests. Through the use of Rainfocus' api, we were able to gather this information in one place, and easily access it on demand. We used the Attendee's selected interests to then provide them with activity and session recommendations while they attended the conference.",
-      "additionalDesc2": "At the conclusion of the conference each attendee was provided a personalized Dreamforce Recap experience. To create this experience, my team and I built an intelligent algorithm to parse stored attendee activity and serve specific Lottie and GSAP animations, as well as curated .MP4's. User's were able to share their recap experience by way of our sharing component, making use of the HTML5 canvas element.",
+      "description": "For Salesforce's Dreamforce 2023, our team developed an engaging quiz and recap experience using Next.js, aimed at enhancing the conference experience for attendees with interactive and memorable content.",
+      "additionalDesc1": "Our quiz transformed attendee engagement at the conference. By harnessing Rainfocus' API, we captured attendees' interests in real-time, creating a centralized hub of data. This wasn't just data collection; it was the key to personalizing their conference journey. Based on their selected interests, we offered tailored activity and session recommendations, ensuring each attendee had a uniquely curated experience that resonated with their professional and personal aspirations.",
+      "additionalDesc2": "At the conference's end, each attendee received a personalized Dreamforce Recap, crafted using an intelligent algorithm. This recap integrated Lottie and GSAP animations with curated .MP4s, reflecting their individual activities. Our sharing component, built on the HTML5 canvas, allowed for seamless sharing of these unique digital stories.",
       "images": ["/work-img/dreamforce/dreamforce-recap.png", "/work-img/dreamforce/quiz-question.png", "/work-img/dreamforce/quiz-recap.png"],
       "video": "/work-img/dreamforce/recap-video.mp4"
     },
@@ -14,9 +14,9 @@
       "id": "instrument",
       "title": "Instrument Dot Com",
       "tech": "Nuxt 3 | Vue 3 | Pinia | Storyblok | Netlify",
-      "description": "In 2023 Instrument.com went through an entire rebrand, and through collaboration with our design team and my fellow development team, we brought the new site to life.",
-      "additionalDesc1": "My main role in the project was to introduce animation to the site using the GSAP library. GSAP's ScrollTrigger method played a huge part in animation different aspects of the site. We created a global function for each GSAP method we needed to implement within the site, and by passing specific props to this global method, we were able to easily organize our code and re-use animations throughout the site.",
-      "additionalDesc2": "The rebrand of the Instrument.com was a cross agency effort, and I was delighted to have the opportunity to contribute.",
+      "description": "In 2023, Instrument.com saw an exciting transformation. Our collaboration brought together creative minds from both design and development teams. Together, we reimagined the website, infusing it with a fresh, modern look and a user-friendly interface. This wasn't just a redesign; it was a rebirth of the site, making it more engaging and reflective of our evolving brand.",
+      "additionalDesc1": "In this project, my primary task was to breathe life into the website with captivating animations, using the GSAP (GreenSock Animation Platform) library. A key feature in my arsenal was GSAP's ScrollTrigger method, which became instrumental in animating various elements of the site in a dynamic, scroll-dependent manner. To streamline our workflow, we developed a set of global functions for each required GSAP method. By simply passing tailored properties to these functions, we achieved an organized code structure, enabling the effortless reuse of animations across different parts of the site. This approach not only enhanced the site's interactivity but also maintained a clean, manageable codebase.",
+      "additionalDesc2": "The rebranding of Instrument.com was a major undertaking within our agency, and I was excited to have the opportunity to contribute. It was a chance to put my skills to the test, collaborating closely with a talented team of colleagues. Together, we blended our creative and technical expertise, playing a key role in reshaping and revitalizing the brand's online identity.",
       "images": ["/work-img/instrument/instrument-home.png", "/work-img/instrument/instrument-home.png", "/work-img/instrument/work-grid.png"],
       "video": "/work-img/instrument/scroll-animation.mp4"
     },
@@ -26,9 +26,9 @@
       "tech": "MongoDB | Express | React | GraphQL",
       "repo": "https://github.com/ChrisKurz098/NASAteroids",
       "live": "https://asteroids.onrender.com/",
-      "description": "For our final project in the University of Oregon Fullstack Coding Bootcamp, my group and I decided to re-build the beloved game Asteroids using the MERN stack.",
-      "additionalDesc1": "We used Javascript and React to recreate the Asteroids game engine. Global state played a major role keeping track of gameplay and player's scores.",
-      "additionalDesc2": "A Gameplayer could create a profile, progress through gameplay until they lost all three of their lives, and then have their high score added to the leaderboard as well as their profile.",
+      "description": "For our capstone project at the University of Oregon Fullstack Coding Bootcamp, my team and I embarked on an ambitious journey to recreate the classic game Asteroids. We chose the modern and robust MERN stack (MongoDB, Express.js, React, and Node.js) as our foundation. This project wasn't just about building a game; it was a deep dive into full-stack development, challenging us to blend intricate backend logic with a dynamic frontend. As we pieced together each aspect of the game, from the responsive spaceship controls to the floating asteroids, we transformed a nostalgic arcade favorite into a contemporary web application, showcasing our newfound coding prowess.",
+      "additionalDesc1": "In revamping the classic Asteroids game, we chose JavaScript and React for their flexibility and power. Our development centered on crafting a responsive game engine. We implemented global state management to efficiently handle game dynamics, such as player interactions and score tracking. This approach not only enhanced the game's responsiveness but also allowed us to maintain a clear and organized code structure, crucial for real-time gameplay updates and scorekeeping.",
+      "additionalDesc2": "Players could create their own profiles, navigating through the game until they exhausted their three lives. After the game, their high scores were automatically updated both on the leaderboard and on their personal profiles, enhancing the competitive and personalized aspects of the gaming experience.",
       "images": ["/work-img/asteroids/asteroids-home.png","/work-img/asteroids/game-play.png", "/work-img/asteroids/profile.png"]
     },
     {
@@ -37,9 +37,9 @@
       "tech": "JavaScript | Express | Sequelize | Handlebars-js | MySQL2",
       "repo": "https://github.com/emdok/Plantzzz",
       "live": "https://plantzzz.herokuapp.com",
-      "description": "Plantzzz is an app that allows you to consolidate your house plants into a personal database. It will remind you of watering dates, provide helpful information about all kinds of plants, as well as the ability to manage each plant you've added within your account.",
-      "additionalDesc1": "We utilized SQL Server express to store plant and account data, as well as sequelize and handlebars to handle and display the data.",
-      "additionalDesc2": "My group and built this app while we attended the University of Oregon Fullstack Web Developmet Bootcamp.",
+      "description": "Plantzzz is a user-friendly app designed to be a one-stop solution for houseplant enthusiasts. Built with a stack comprising JavaScript, Express, Sequelize, Handlebars.js, and MySQL2, it offers a seamless way to manage a personal database of house plants. The app not only reminds users of watering schedules but also provides insightful information about various plant species. Additionally, users can effortlessly manage their plant collection within their account, thanks to the interactive functionalities enabled by this tech stack.",
+      "additionalDesc1": "In Plantzzz, we used SQL Server Express for storing plant and account data. For handling and displaying this data, Sequelize and Handlebars.js were integral, providing efficient data management and dynamic templating for an enhanced user experience.",
+      "additionalDesc2": "Our plant management system integrates both the backend and frontend components. This system empowers users with the capability to save, delete, and cancel updates to their plant profiles. Leveraging our technology stack, we've crafted a user-friendly platform for managing houseplants.",
       "images": ["/work-img/plantzzz/plantzzz-home.png", "/work-img/plantzzz/plantzzz-dashboard.png", "/work-img/plantzzz/plantzzz-edit.png"]
     }
   ]
