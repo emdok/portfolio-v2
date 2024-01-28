@@ -1,8 +1,8 @@
 <script setup>
-import HeroImage from '@/components/HeroImage.vue'
-import AboutView from '@/views/AboutView.vue'
-import WorkView from '@/views/WorkView.vue'
-import TechView from '@/views/TechView.vue'
+import HeroImage from '../components/HeroImage.vue'
+import AboutView from '../views/AboutView.vue'
+import WorkView from '../views/WorkView.vue'
+import TechView from '../views/TechView.vue'
 </script>
 
 <template>

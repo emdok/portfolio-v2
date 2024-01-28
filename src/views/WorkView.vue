@@ -1,5 +1,5 @@
 <script setup>
-  import WorkGrid from '@/components/WorkGrid.vue';
+  import WorkGrid from '../components/WorkGrid.vue';
 </script>
 <template>
   <div class="work-view">

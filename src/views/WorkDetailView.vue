@@ -1,5 +1,5 @@
 <script setup>
-import WorkDetailCard from '@/components/WorkDetailCard.vue'
+import WorkDetailCard from '../components/WorkDetailCard.vue'
 import WorkData from '../assets/data/work-data.json'
 import { useRoute } from 'vue-router'
 import { ref } from 'vue'

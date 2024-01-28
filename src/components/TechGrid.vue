@@ -1,6 +1,6 @@
 <script setup>
-import TechCard from '@/components/TechCard.vue'
-import TechData from '@/assets/data/tech-data.json'
+import TechCard from '../components/TechCard.vue'
+import TechData from '../assets/data/tech-data.json'
 import { ref } from 'vue';
 
 const items = ref(TechData.items);

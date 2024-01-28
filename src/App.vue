@@ -1,8 +1,8 @@
 <script setup>
 import { watch, ref } from 'vue'
 import { RouterLink, RouterView, useRoute } from 'vue-router'
-import Hero from '@/components/Hero.vue'
-import Footer from '@/components/Footer.vue'
+import Hero from './components/Hero.vue'
+import Footer from './components/Footer.vue'
 
 const route = useRoute()
 const preventHeroDisplay = ref(route.path !== '/contact' && !route.path.startsWith('/work-detail'))

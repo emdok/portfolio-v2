@@ -1,5 +1,5 @@
 <script setup>
-import TechGrid from '@/components/TechGrid.vue'
+import TechGrid from '../components/TechGrid.vue'
 </script>
 
 <template>
