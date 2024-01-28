@@ -8,7 +8,7 @@ const items = ref(TechData.items);
 
 <template>
   <div class="tech-grid">
-    <TechCard v-for="(item, index) in items" :key="item.id" :tech-item="item" />
+    <TechCard v-for="(item) in items" :key="item.id" :tech-item="item" />
   </div>
 </template>
 

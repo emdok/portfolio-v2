@@ -2,7 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '@/views/HomeView.vue'
 import WorkView from '@/views/WorkView.vue'
 import TechView from '@/views/TechView.vue'
-import ContactView from '../views/ContactView.vue'
+import ContactView from '@/views/ContactView.vue'
 import WorkDetailView from '@/views/WorkDetailView.vue'
 
 

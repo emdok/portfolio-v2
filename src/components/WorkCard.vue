@@ -14,8 +14,8 @@ const navigateToWorkDetail = (id) => {
 </script>
 
 <template>
-  <div class="work-card" @click="navigateToWorkDetail(item.id)">
-    <img v-if="item.images && item.images.length > 0" :src="item.images[0]" />
+  <div class="work-card" @click="navigateToWorkDetail(props.item.id)">
+    <img v-if="props.item.images && props.item.images.length > 0" :src="props.item.images[0]" />
   </div>
 </template>
 
