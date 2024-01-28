@@ -7,7 +7,7 @@
       <span class="p2--bold">Frontend Web Developer</span> with a knack for
       <span class="p2--bold">JavaScript</span> and <span class="p2--bold">React</span> who combines
       coding with a strong sense of design. She stands out for her ability to
-      <span class="p2--bold">merge creativity with functionality</span> in collaborative
+ in collaborative
       environments.
     </p>
   </div>
