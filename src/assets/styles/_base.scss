@@ -24,16 +24,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-main {
-	display: flex;
-	flex-direction: column;
-	flex: 1 0 auto;
-	margin: auto;
-	padding: 0;
-	position: relative;
-	width: 100%;
-}
-
 img {
 	display: block;
 	height: auto;

@@ -14,35 +14,45 @@ watch(route, (newRoute) => {
 </script>
 
 <template>
-  <header>
-    <div class="wrapper">
+  <div class="site-wrapper">
+    <header>
       <Hero v-if="preventHeroDisplay" />
       <div class="nav">
         <nav>
-          <RouterLink v-if="!preventHeroDisplay" to="/"><img class="home" src="/home.svg" alt="home"></RouterLink>
+          <RouterLink v-if="!preventHeroDisplay" to="/"
+            ><img class="home" src="/home.svg" alt="home"
+          /></RouterLink>
           <RouterLink to="/#work-section">Work</RouterLink>
           <RouterLink to="/#tech-section">Technology</RouterLink>
           <RouterLink to="/contact">Contact</RouterLink>
         </nav>
       </div>
-    </div>
-  </header>
-  <main>
-    <RouterView />
-  </main>
-
-  <Footer />
+    </header>
+    <main>
+      <RouterView />
+    </main>
+    <Footer />
+  </div>
 </template>
 
 <style lang="scss">
-header {
-  background: linear-gradient($color-light-orange 75%, rgba(0, 0, 0, 0));
+.site-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
-.wrapper {
+
+main {
+  flex: 1;
+}
+
+header {
   align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background: linear-gradient($color-light-orange 75%, rgba(0, 0, 0, 0));
+  padding-top: calc(env(safe-area-inset-top) + 20px); /* Adjust top padding */
 }
 
 .nav {
@@ -61,6 +71,7 @@ nav {
   justify-content: space-between;
   text-transform: uppercase;
   width: 100%;
+  gap: 10px;
   a {
     color: $color-dark-gray;
     padding: 0 6px;
@@ -76,5 +87,12 @@ nav {
 section {
   padding: 5% 0;
   margin-block-end: 100px;
+}
+
+/* Additional styles for iOS to ensure full coverage */
+@supports (padding-top: constant(safe-area-inset-top)) {
+  header {
+    padding-top: calc(constant(safe-area-inset-top) + 20px);
+  }
 }
 </style>

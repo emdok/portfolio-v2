@@ -53,7 +53,11 @@ workDetail.value = WorkData.items.find((item) => item.id === workId)
 
 <style lang="scss">
 .work-detail {
-  margin: 0 100px;
+  margin: 0 30px;
+
+  @include mq(m) {
+    margin: 0 100px;
+  }
 
   &__heading {
     @include work-detail-heading;
@@ -74,8 +78,12 @@ workDetail.value = WorkData.items.find((item) => item.id === workId)
     video {
       border-radius: 20px;
       box-shadow: -3px 3px $color-dark-gray;
-      max-width: 400px;
+      max-width: 220px;
       height: auto;
+
+      @include mq(m) {
+        width: 400px;
+      }
     }
 
     .work-card,

@@ -76,6 +76,7 @@ async function submitForm() {
   max-width: 600px;
   padding: 1em;
   width: 100%;
+  margin-bottom: 100px;
 
   .form-group {
     margin-bottom: 1em;
@@ -99,11 +100,11 @@ async function submitForm() {
 
     input[type='text'],
     input[type='email'] {
-      height: 50px;
+      height: 40px;
     }
 
     textarea {
-      height: 300px;
+      height: 200px;
     }
   }
 

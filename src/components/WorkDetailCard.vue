@@ -16,12 +16,17 @@ const props = defineProps({
 <style lang="scss">
   .work-detail-card {
     img {
-      border-radius: 45px;
+      border-radius: 25px;
       height: auto;
-      max-width: 400px;
+      max-width: 220px;
       object-fit: contain;
       box-shadow: -3px 3px $color-dark-gray;
       overflow: hidden;
+
+      @include mq(m) {
+        border-radius: 45px;
+        max-width: 400px;
+      }
     }
   }
 </style>
