@@ -18,7 +18,6 @@ import WorkData from '../assets/data/work-data.json'
   column-gap: 30px;
   display: grid;
   grid-template-columns: repeat(1, minmax(300px, 1fr));
-  place-items: center;
   row-gap: 30px;
   
   @include mq(m) {

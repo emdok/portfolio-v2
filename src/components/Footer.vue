@@ -18,12 +18,9 @@
 
 <style lang="scss">
 footer {
-  position: fixed;
-  bottom: 0;
   height: 75px;
   width: 100%;
   background-color: $color-light-orange;
-  z-index: 1000;
 }
 
 .footer-links {
