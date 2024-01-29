@@ -4,13 +4,19 @@
   <footer>
     <ul class="footer-links">
       <li>
-        <a href="https://github.com/emdok" target="_blank"><img src="/github_link.svg" alt="Github" /></a>
+        <a href="https://github.com/emdok" target="_blank"
+          ><img src="/github_icon.png" alt="Github"
+        /></a>
       </li>
       <li>
-        <a href="https://www.linkedin.com/in/emdok/" target="_blank"><img src="/linkedIn_icon.svg" alt="LinkedIn" /></a>
+        <a href="https://www.linkedin.com/in/emdok/" target="_blank"
+          ><img src="/linkedIn_icon.png" alt="LinkedIn"
+        /></a>
       </li>
       <li>
-        <a href="https://stackexchange.com/users/22932012/nokkemded" target="_blank"><img src="/stack_overflow_icon.svg" alt="Stack Overflow" /></a>
+        <a href="https://stackexchange.com/users/22932012/nokkemded" target="_blank"
+          ><img src="/stack_overflow_icon.png" alt="Stack Overflow"
+        /></a>
       </li>
     </ul>
   </footer>
@@ -18,9 +24,9 @@
 
 <style lang="scss">
 footer {
-  height: 75px;
-  width: 100%;
   background-color: $color-light-orange;
+  padding: 20px;
+  width: 100%;
 }
 
 .footer-links {
@@ -28,16 +34,18 @@ footer {
   align-items: center;
   justify-content: center;
   margin: 0 auto;
+  gap: 20px;
+
+  @include mq(m) {
+    gap: 60px;
+  }
 
   li {
     list-style-type: none;
-    padding: 20px;
     img {
-        max-width: 75%;
-      }
-    @include mq(l) {
-      img {
-        max-width: 100%;
+      width: 25px;
+      @include mq(m) {
+        width: 30px;
       }
     }
   }
