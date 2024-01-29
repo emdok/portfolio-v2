@@ -71,6 +71,7 @@ nav {
   justify-content: space-between;
   text-transform: uppercase;
   width: 100%;
+  gap: 10px;
   a {
     color: $color-dark-gray;
     padding: 0 6px;
