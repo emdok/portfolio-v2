@@ -52,6 +52,7 @@ header {
   flex-direction: column;
   justify-content: center;
   background: linear-gradient($color-light-orange 75%, rgba(0, 0, 0, 0));
+  padding-top: calc(env(safe-area-inset-top) + 20px); /* Adjust top padding */
 }
 
 .nav {
@@ -85,5 +86,12 @@ nav {
 section {
   padding: 5% 0;
   margin-block-end: 100px;
+}
+
+/* Additional styles for iOS to ensure full coverage */
+@supports (padding-top: constant(safe-area-inset-top)) {
+  header {
+    padding-top: calc(constant(safe-area-inset-top) + 20px);
+  }
 }
 </style>
