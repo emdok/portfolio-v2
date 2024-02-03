@@ -82,7 +82,7 @@ workDetail.value = WorkData.items.find((item) => item.id === workId)
       height: auto;
 
       @include mq(m) {
-        width: 400px;
+        max-width: 400px;
       }
     }
 
