@@ -31,9 +31,3 @@ jobs:
     - run: npm ci
     - run: npm run lint
     - run: npm run build
-    - name: Deploy to GitHub Pages
-      uses: JamesIves/github-pages-deploy-action@v4
-      with:
-        branch: gh-pages
-        folder: dist
-        token: ${{ secrets.PORTFOLIO_V2 }}
