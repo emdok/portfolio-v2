@@ -11,6 +11,36 @@
       "video": "/work-img/dreamforce/recap-video.mp4"
     },
     {
+      "id": "ondiem",
+      "title": "onDiem | Web Platform",
+      "tech": "React | TypeScript | Webflow | HubSpot | GA4",
+      "live": "https://www.ondiem.com",
+      "description": "onDiem is a W-2 dental staffing platform connecting hygienists and assistants with practices across the country. As the frontend engineer on the web platform, I owned and shipped core product features used daily by both dental professionals and practices.",
+      "additionalDesc1": "I built a real-time availability calendar and job listings experience embedded within Webflow, using custom React components integrated with RESTful APIs for filtering, pagination, and location-based matching via geolocation. The result is a high-intent search experience that surfaces the right shifts for the right professionals — fast.",
+      "additionalDesc2": "Beyond the core product, I integrated HubSpot CRM and automated marketing workflows for lifecycle emails and lead capture, and instrumented GA4 with custom events and UTM tracking to power attribution and A/B experimentation across the platform.",
+      "images": ["/work-img/ondiem/ondiem_practices.png", "/work-img/ondiem/ondiem_shifts.png"]
+    },
+    {
+      "id": "ondiem-flutter",
+      "title": "onDiem | Mobile App",
+      "tech": "Flutter | Rust | Claude AI | Agent Orchestration",
+      "description": "A mobile application prototype built for dental professionals to find and book shifts on the go. This project was developed using an AI-assisted workflow centered around Claude and iterative ralph-loop execution — a process of scoping, generating, testing, and refining in focused cycles.",
+      "additionalDesc1": "Rather than building in a traditional linear flow, we used a structured agent orchestration system to drive development. Each iteration was scoped to a single task, with Claude generating implementation candidates that were tested and refined before moving forward. This approach kept the codebase clean and the build process intentional.",
+      "additionalDesc2": "The result is a polished prototype featuring shift search with availability and pay rate filtering, location-aware job matching, and a role-based UI tailored to dental professionals. This project represents a new way of building — where AI is a core part of the development loop, not just a tool on the side.",
+      "images": ["/work-img/ondiem/ondiem-marketplace.png"],
+      "video": "/work-img/ondiem/ondiem_marketplace.mp4"
+    },
+    {
+      "id": "fossil-park",
+      "title": "Edelman Fossil Park & Museum",
+      "tech": "Next.js | TypeScript | Tailwind CSS | Sanity CMS | Netlify",
+      "live": "https://www.rowanfossilpark.org",
+      "description": "A full frontend build for the Edelman Fossil Park & Museum at Rowan University — a one-of-a-kind destination where visitors can dig for real 66-million-year-old fossils. The site needed to be as engaging as the experience itself, with clear pathways for tickets, memberships, education programs, and events.",
+      "additionalDesc1": "I architected the responsive Next.js and TypeScript frontend from the ground up, using Tailwind CSS for a clean, maintainable styling system. Sanity CMS was integrated to give the museum's team full self-service control over content — from event listings to educational resources — without touching code.",
+      "additionalDesc2": "Performance was a priority throughout. By optimizing global context management and data fetching patterns, the site achieved a 50% improvement in page load performance over the previous implementation. The site is live and actively used by visitors planning their trip to the park.",
+      "images": ["/work-img/fossil-park/rowan_fossil_park.png"]
+    },
+    {
       "id": "instrument",
       "title": "Instrument Dot Com",
       "tech": "Nuxt 3 | Vue 3 | Pinia | Storyblok | Netlify",
@@ -31,17 +61,6 @@
       "additionalDesc1": "In revamping the classic Asteroids game, we chose JavaScript and React for their flexibility and power. Our development centered on crafting a responsive game engine. We implemented global state management to efficiently handle game dynamics, such as player interactions and score tracking. This approach not only enhanced the game's responsiveness but also allowed us to maintain a clear and organized code structure, crucial for real-time gameplay updates and scorekeeping.",
       "additionalDesc2": "Players could create their own profiles, navigating through the game until they exhausted their three lives. After the game, their high scores were automatically updated both on the leaderboard and on their personal profiles, enhancing the competitive and personalized aspects of the gaming experience.",
       "images": ["/work-img/asteroids/asteroids-home.png","/work-img/asteroids/game-play.png", "/work-img/asteroids/profile.png"]
-    },
-    {
-      "id": "plantzzz",
-      "title": "Plantzzz",
-      "tech": "JavaScript | Express | Sequelize | Handlebars-js | MySQL2",
-      "repo": "https://github.com/emdok/Plantzzz",
-      "live": "https://plantzzz.herokuapp.com",
-      "description": "Plantzzz is a user-friendly app designed to be a one-stop solution for houseplant enthusiasts. Built with a stack comprising JavaScript, Express, Sequelize, Handlebars.js, and MySQL2, it offers a seamless way to manage a personal database of house plants. The app not only reminds users of watering schedules but also provides insightful information about various plant species. Additionally, users can effortlessly manage their plant collection within their account, thanks to the interactive functionalities enabled by this tech stack.",
-      "additionalDesc1": "In Plantzzz, we used SQL Server Express for storing plant and account data. For handling and displaying this data, Sequelize and Handlebars.js were integral, providing efficient data management and dynamic templating for an enhanced user experience.",
-      "additionalDesc2": "Our plant management system integrates both the backend and frontend components. This system empowers users with the capability to save, delete, and cancel updates to their plant profiles. Leveraging our technology stack, we've crafted a user-friendly platform for managing houseplants.",
-      "images": ["/work-img/plantzzz/plantzzz-home.png", "/work-img/plantzzz/plantzzz-dashboard.png", "/work-img/plantzzz/plantzzz-edit.png"]
     }
   ]
 }

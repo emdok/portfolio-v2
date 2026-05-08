@@ -40,7 +40,8 @@ workDetail.value = WorkData.items.find((item) => item.id === workId)
       <p class="work-detail__additional-content__top__text">
         {{ workDetail.additionalDesc1 }}
       </p>
-      <WorkDetailCard :image="workDetail.images[1]" />
+      <WorkDetailCard v-if="workDetail.video" :image="workDetail.images[0]" />
+      <WorkDetailCard v-else :image="workDetail.images[1]" />
     </div>
     <div class="work-detail__additional-content__bottom">
       <WorkDetailCard :image="workDetail.images[2]" />
