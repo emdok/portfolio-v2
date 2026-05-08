@@ -3,11 +3,12 @@
 <template>
   <div class="about-view">
     <p class="p2">
-      <span class="p2--bold">Frontend Web Developer</span> with a knack for
-      <span class="p2--bold">JavaScript</span> and <span class="p2--bold">React</span> who combines
-      coding with a strong sense of design. She stands out for her ability to
-      <span class="p2--bold">merge creativity with functionality</span>
-      in collaborative environments.
+      <span class="p2--bold">Creative technologist</span> with 6+ years of experience across <span
+        class="p2--bold">React frameworks</span>, <span class="p2--bold"> APIs</span>, and <span
+        class="p2--bold">emerging tech</span>. She adapts
+      quickly to new tools and brings a breadth of knowledge from <span class="p2--bold">component libraries</span> and
+      <span class="p2--bold">design systems</span> to <span class="p2--bold">AI-powered</span>
+      workflows."
     </p>
   </div>
 </template>
