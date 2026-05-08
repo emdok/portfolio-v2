@@ -2,7 +2,7 @@
   "items": [
     {
       "id": "01",
-      "technologies": ["JavaScript", "React", "Swift", "Vue"],
+      "technologies": ["JavaScript", "React", "Typescript", "Vue"],
       "image": "/green-background.png"
     },
     {
@@ -14,6 +14,11 @@
       "id": "03",
       "technologies": ["AEM", "Cypress.io", "Astro", "Angular"],
       "image": "/blue-background.png"
+    },
+    {
+      "id": "04",
+      "technologies": ["NextJS", "Claude", "Flutter", "Dart"],
+      "image": "/green-background.png"
     }
   ]
 }

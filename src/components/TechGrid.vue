@@ -19,7 +19,7 @@ const items = ref(TechData.items);
   flex-direction: column;
   align-items: baseline;
   width: 100%;
-  .tech-card:nth-child(2) {
+  .tech-card:nth-child(even) {
     align-self: end;
   }
 } 
